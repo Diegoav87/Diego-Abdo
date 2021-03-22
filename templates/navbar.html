@@ -1,0 +1,26 @@
+{% load static %}
+<div class="overlay"></div>
+<nav class="main-nav">
+        <a href="{% url 'index' %}"><img src="{% static 'images/small-logo.png' %}" class="logo"></a>
+        <div class="nav-links" id="wide-links">
+            <a href="{% url 'index' %}" class="">INICIO</a>
+            <a href="#services" class="">SERVICIOS</a>
+            <a href="#projects" class="">PROYECTOS</a>
+            <a href="#contact" class="">CONTACTO</a>
+            <a href="{% url 'tutorials:tutorials' %}" class="">TUTORIALES</a>
+            <a href="{% url 'about' %}" class="">ACERCA DE</a>
+        </div>
+        <div class="menu-btn">
+            <div class="menu-btn-burger"></div>
+        </div>
+        <div class="side-menu">
+            <ul class="menu-list">
+                <li><a href="{% url 'index' %}">INICIO</a></li>
+                <li><a href="#services">SERVICIOS</a></li>
+                <li><a href="#projects">PROYECTOS</a></li>
+                <li><a href="#contact">CONTACTO</a></li>
+                <li><a href="{% url 'tutorials:tutorials' %}">TUTORIALES</a></li>
+                <li><a href="{% url 'about' %}">ACERCA DE</a></li>
+            </ul>
+        </div>
+</nav>

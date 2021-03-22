@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="about-section">
+    <div class="about-container">
+        <div class="info">
+            <div class="life">
+                <h1>¿Quién Soy?</h1>
+                <div class="underline underline-about"></div>
+                <p>Soy un desarrollador de software que crea sitios y aplicaciones web increíbles con algunas de las mejores tecnologías.
+                </p>
+                <p>Todos los días construyo nuevos proyectos para aprender más sobre programación y desarrollo web. También hago tutoriales en youtube para ayudar a la gente a aprender desarrollo web y programación.</p>
+            </div>
+            <div class="technologies">
+                <h2>Tecnologías</h2>
+                <div class="underline underline-about"></div>
+                <p>Estas son algunas de las tecnologías que utilizo para crear sitios y aplicaciones web. </p>
+                <div class="tec-icons">
+                    <div class="tec-container">
+                        <img src="{% static 'images/tec/js.svg' %}">
+                        <h6>Javascript</h6>
+                    </div>
+                    <div class="tec-container">
+                        <img src="{% static 'images/tec/python.svg' %}">
+                        <h6>Python</h6>
+                    </div>
+                    <div class="tec-container">
+                        <img src="{% static 'images/tec/html.svg' %}">
+                        <h6>HTML</h6>
+                    </div>
+                    <div class="tec-container">
+                        <img src="{% static 'images/tec/css.svg' %}">
+                        <h6>CSS</h6>
+                    </div>
+                    <div class="tec-container">
+                        <img src="{% static 'images/tec/wordpress.svg' %}">
+                        <h6>Wordpress</h6>
+                    </div>
+                    <div class="tec-container">
+                        <img src="{% static 'images/tec/postgres.svg' %}">
+                        <h6>Postgres</h6>
+                    </div>
+                    <div class="tec-container">
+                        <img src="{% static 'images/tec/django.svg' %}">
+                        <h6>Django</h6>
+                    </div>
+                    <div class="tec-container">
+                        <img src="{% static 'images/tec/react.svg' %}">
+                        <h6>React</h6>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="visual">
+            <div class="pic-container">
+                    <img class="about-pic" src="{% static 'images/me.jpeg' %}">
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/diegoabdodev"><img src="{% static 'images/social/facebook.svg' %}"></a>
+                <a href="https://twitter.com/diegoabdodev"><img src="{% static 'images/social/twitter.svg' %}"></a>
+                <a href="https://www.youtube.com/channel/UCWvinsn7iTIha1WqhgxstBQ"><img src="{% static 'images/social/youtube.svg' %}"></a>
+                <a href="https://www.instagram.com/diego.devs/"><img src="{% static 'images/social/instagram.svg' %}"></a>
+                <a href="https://github.com/Diegoav87"><img src="{% static 'images/social/github.svg' %}"></a>
+            </div>
+        </div>
+    </div>
+    
+</section>
+{% include 'footer.html' %}
+{% endblock %}

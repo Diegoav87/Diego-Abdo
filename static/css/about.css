@@ -1,0 +1,125 @@
+h6 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.about-section {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.about-section h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.about-section h2 {
+  text-align: left;
+}
+
+.underline-about {
+  margin: 0;
+  margin-bottom: 1.5rem;
+  width: 25%;
+}
+
+.about-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.about-pic {
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 1rem;
+}
+
+.life {
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.tec-icons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  width: 70%;
+  gap: 0.6rem;
+  margin-right: auto;
+  align-items: flex-end;
+}
+
+.tec-icons img {
+  text-align: center;
+}
+
+.tec-container {
+  margin-bottom: 1rem;
+}
+
+.tec-container img {
+  margin-bottom: 0.6rem;
+}
+
+@media (max-width: 769px) {
+  .about-container {
+    display: block;
+  }
+
+  .about-container,
+  .about-container h1,
+  .about-container h2,
+  .underline-about {
+    text-align: center;
+  }
+
+  .underline-about {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tec-icons {
+    margin-left: auto;
+    width: 90%;
+  }
+
+  .tec-icons img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+
+  .tec-icons h6 {
+    font-size: 0.875rem;
+  }
+
+  .about-pic {
+    max-height: 80%;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-section {
+    width: 90%;
+  }
+
+  .tec-icons img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .tec-icons h6 {
+    font-size: 0.7rem;
+  }
+
+  .about-section h1 {
+    font-size: 2rem;
+  }
+
+  .about-section h2 {
+    font-size: 1.5rem;
+  }
+}

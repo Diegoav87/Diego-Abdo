@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="title-section" id="title">
+    <h1>¿Necesitas un sitio web?</h1>
+    <p>Desarrollo sitios web con experiencia de usuario completas e increíbles.</p>
+    <a href="#projects"><button class="blue-btn">PROYECTOS</button></a>
+</section>
+
+<section class="services-section" id="services">
+    <h2>Servicios</h2>
+    <div class="underline"></div>
+    <div class="services-container-1">
+        <div class="service-block">
+            <img class="service-icon" src="{% static 'images/paint-icon.svg' %}">
+            <h3>Diseño Web</h3>
+            <p>Diseños adaptativos y modernos para tu sitio web.</p>
+        </div>
+        <div class="service-block">
+            <img class="service-icon" src="{% static 'images/code-icon.svg' %}">
+            <h3>Sitios Web</h3>
+            <p>Sitios web sencillos para tener tu negocio online.</p>
+        </div>
+        <div class="service-block">
+            <img class="service-icon" src="{% static 'images/tool-icon.svg' %}">
+            <h3>Desarrollo Web</h3>
+            <p>Desarrollo de aplicaciones web completas y personalizadas.</p>
+        </div>
+    </div>
+    <div class="services-container-2">
+        <div class="service-block">
+            <img class="service-icon" src="{% static 'images/api-icon.svg' %}">
+            <h3>API</h3>
+            <p>Integración de una API con diferentos puntos.</p>
+        </div>
+        <div class="service-block">
+            <img class="service-icon" src="{% static 'images/arrow-icon.svg' %}">
+            <h3>Publicación</h3>
+            <p>Publicación de tu sitio web para que todos lo puedan ver.</p>
+        </div>
+    </div>
+</section>
+
+<section class="project-section" id="projects">
+    <h2>Proyectos</h2>
+    <div class="underline"></div>
+    <div class="project-block right">
+        <div class="project-info">
+            <h3>Pokelix</h3>
+            <p>Busca cualquier pokemón y ve sus detalles.</p>
+            <div class="project-btns">
+                <button class="blue-btn ver-btn">VER</button>
+                <button class="dark-btn git-btn">GITHUB</button>
+            </div>
+        </div>
+        <div class="project-thumbnail">
+            <img class="project-right" src="{% static 'images/Pokelix.png' %}">
+        </div>
+    </div>
+
+    <div class="project-block">
+        <div class="project-thumbnail">
+            <img class="project-left" src="{% static 'images/Pokelix.png' %}">
+        </div>
+        <div class="project-info">
+            <h3>Pokelix</h3>
+            <p>Busca cualquier pokemón y ve sus detalles.</p>
+            <div class="project-btns">
+                <button class="blue-btn ver-btn">VER</button>
+                <button class="dark-btn git-btn">GITHUB</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <div class="contact-changer">
+    <h2>Contacto</h2>
+    <div class="underline"></div>
+    <div class="contact-block">
+        <div class="mail-icon">
+            <img src="{% static 'images/mail.svg' %}">
+        </div>
+        <div class="contact-form">
+            <form>
+                <label>Nombre</label>
+                <input type="text">
+                <label>Email</label>
+                <input type="email">
+                <label>Mensaje</label>
+                <textarea rows="10"></textarea>
+                <button class="blue-btn">MANDAR</button>
+            </form>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/diegoabdodev"><img src="{% static 'images/social/facebook.svg' %}"></a>
+                <a href="https://twitter.com/diegoabdodev"><img src="{% static 'images/social/twitter.svg' %}"></a>
+                <a href="https://www.youtube.com/channel/UCWvinsn7iTIha1WqhgxstBQ"><img src="{% static 'images/social/youtube.svg' %}"></a>
+                <a href="https://www.instagram.com/diego.devs/"><img src="{% static 'images/social/instagram.svg' %}"></a>
+                <a href="https://github.com/Diegoav87"><img src="{% static 'images/social/github.svg' %}"></a>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<footer>
+    <div class="footer-placeholder">
+        
+    </div>
+    <p class="footer-copy">&copy; 2021 Diego Abdo</p>
+</footer>
+
+{% endblock %}
