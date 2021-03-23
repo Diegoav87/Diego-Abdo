@@ -1,4 +1,26 @@
 {% extends 'base.html' %}
+{% load static %}
+{% block extras %}
+<link rel="stylesheet" href="{% static 'css/tutorials.css' %}">
+{% endblock %}
+
 {% block content %}
-<h1>Tutoriales</h1>
+<div class="tutorials-container">
+    <h1>Tutoriales</h1>
+    <div class="underline underline-about"></div>
+    <div class="video-container">
+        {% for video in videos %}
+        <div class="video">
+        <img src="{{video.thumbnail}}">
+            <div class="video-info">
+                <h6>{{video.title}}</h6>
+                <a target="_blank" href="{{video.url}}"><button class="blue-btn">Ver</button></a>
+            </div>
+        </div>
+    
+        {% endfor %}
+    </div>
+</div>
+{% include 'footer.html' %}
+
 {% endblock %}

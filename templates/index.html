@@ -82,13 +82,14 @@
             <img src="{% static 'images/mail.svg' %}">
         </div>
         <div class="contact-form">
-            <form>
+            <form method="POST" action="{% url 'contact' %}">
+                {% csrf_token %}
                 <label>Nombre</label>
-                <input type="text">
-                <label>Email</label>
-                <input type="email">
+                <input name="name" type="text">
+                <label>Correo</label>
+                <input name="email" type="email">
                 <label>Mensaje</label>
-                <textarea rows="10"></textarea>
+                <textarea name="message" rows="10"></textarea>
                 <button class="blue-btn">MANDAR</button>
             </form>
             <div class="social-icons">

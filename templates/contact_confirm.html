@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="confirm-container">
+    <h1>¡Gracias por contactarme {{name}}!</h1>
+    <p>Tu mensaje se envió exitosamente. Trataré de responder lo más pronto posible.</p>
+    <a href="{% url 'index' %}"><button class="blue-btn">VOLVER A INICIO</button></a>
+</div>
+
+{% endblock %}
