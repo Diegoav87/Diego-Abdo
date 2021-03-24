@@ -8,23 +8,30 @@
 />
 <meta itemprop="name" content="Diego Abdo | Desarrollo de Sitios y Aplicaciones Web">
 <meta itemprop="description" content="Desarrollo de sitios web y aplicaciones web. Tutoriales sobre programación y desarrollo web.">
-<meta itemprop="image" content="https://diegoabdo.com/static/media/small-logo.90c81001.png">
+<meta itemprop="image" content="https://diegoabdo.com/static/images/small-logo.png">
 
 <!-- Facebook Meta Tags -->
 <meta property="og:url" content="https://diegoabdo.com">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Diego Abdo | Desarrollo de Sitios y Aplicaciones Web">
 <meta property="og:description" content="Desarrollo de sitios web y aplicaciones web. Tutoriales sobre programación y desarrollo web.">
-<meta property="og:image" content="https://diegoabdo.com/static/media/small-logo.90c81001.png">
+<meta property="og:image" content="https://diegoabdo.com/static/images/small-logo.png">
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Diego Abdo | Desarrollo de Sitios y Aplicaciones Web">
 <meta name="twitter:description" content="Desarrollo de sitios web y aplicaciones web. Tutoriales sobre programación y desarrollo web.">
-<meta name="twitter:image" content="https://diegoabdo.com/static/media/small-logo.90c81001.png">
-<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+<meta name="twitter:image" content="https://diegoabdo.com/static/images/small-logo.png">
 
 <title>Diego Abdo | Desarrollo de Sitios y Aplicaciones Web</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7YYPBK08GG"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-7YYPBK08GG');
+</script>
 {% endblock %}
 
 {% block content %}
@@ -39,29 +46,29 @@
     <div class="underline"></div>
     <div class="services-container-1">
         <div class="service-block">
-            <img class="service-icon" src="{% static 'images/paint-icon.svg' %}">
+            <img alt="pintura" class="service-icon" src="{% static 'images/paint-icon.svg' %}">
             <h3>Diseño Web</h3>
             <p>Diseños adaptativos y modernos para tu sitio web.</p>
         </div>
         <div class="service-block">
-            <img class="service-icon" src="{% static 'images/code-icon.svg' %}">
+            <img alt="codigo" class="service-icon" src="{% static 'images/code-icon.svg' %}">
             <h3>Sitios Web</h3>
             <p>Sitios web sencillos para tener tu negocio online.</p>
         </div>
         <div class="service-block">
-            <img class="service-icon" src="{% static 'images/tool-icon.svg' %}">
+            <img alt="herramienta" class="service-icon" src="{% static 'images/tool-icon.svg' %}">
             <h3>Desarrollo Web</h3>
             <p>Desarrollo de aplicaciones web completas y personalizadas.</p>
         </div>
     </div>
     <div class="services-container-2">
         <div class="service-block">
-            <img class="service-icon" src="{% static 'images/api-icon.svg' %}">
+            <img alt="api" class="service-icon" style="color: #5590bd;" src="{% static 'images/api-icon.svg' %}">
             <h3>API</h3>
             <p>Integración de una API con diferentos puntos.</p>
         </div>
         <div class="service-block">
-            <img class="service-icon" src="{% static 'images/arrow-icon.svg' %}">
+            <img alt="flecha" class="service-icon" src="{% static 'images/arrow-icon.svg' %}">
             <h3>Publicación</h3>
             <p>Publicación de tu sitio web para que todos lo puedan ver.</p>
         </div>
@@ -81,13 +88,13 @@
             </div>
         </div>
         <div class="project-thumbnail">
-            <img class="project-right" src="{% static 'images/Pokelix.png' %}">
+            <img alt="pokelix" class="project-right" src="{% static 'images/Pokelix.png' %}">
         </div>
     </div>
 
     <div class="project-block">
         <div class="project-thumbnail">
-            <img class="project-left" src="{% static 'images/Poll.png' %}">
+            <img alt="encuestas" class="project-left" src="{% static 'images/Poll.png' %}">
         </div>
         <div class="project-info">
             <h3>Encuestas</h3>
@@ -106,7 +113,7 @@
     <div class="underline"></div>
     <div class="contact-block">
         <div class="mail-icon">
-            <img src="{% static 'images/mail.svg' %}">
+            <img alt="correo" src="{% static 'images/mail.svg' %}">
         </div>
         <div class="contact-form">
             <form method="POST" action="{% url 'contact' %}">
@@ -120,11 +127,11 @@
                 <button class="blue-btn">MANDAR</button>
             </form>
             <div class="social-icons">
-                <a href="https://www.facebook.com/diegoabdodev"><img src="{% static 'images/social/facebook.svg' %}"></a>
-                <a href="https://twitter.com/diegoabdodev"><img src="{% static 'images/social/twitter.svg' %}"></a>
-                <a href="https://www.youtube.com/channel/UCWvinsn7iTIha1WqhgxstBQ"><img src="{% static 'images/social/youtube.svg' %}"></a>
-                <a href="https://www.instagram.com/diego.devs/"><img src="{% static 'images/social/instagram.svg' %}"></a>
-                <a href="https://github.com/Diegoav87"><img src="{% static 'images/social/github.svg' %}"></a>
+                <a href="https://www.facebook.com/diegoabdodev"><img alt="facebook" src="{% static 'images/social/facebook.svg' %}"></a>
+                <a href="https://twitter.com/diegoabdodev"><img alt="twitter" src="{% static 'images/social/twitter.svg' %}"></a>
+                <a href="https://www.youtube.com/channel/UCWvinsn7iTIha1WqhgxstBQ"><img alt="youtube" src="{% static 'images/social/youtube.svg' %}"></a>
+                <a href="https://www.instagram.com/diego.devs/"><img alt="instagram" src="{% static 'images/social/instagram.svg' %}"></a>
+                <a href="https://github.com/Diegoav87"><img alt="github" src="{% static 'images/social/github.svg' %}"></a>
             </div>
         </div>
     </div>
