@@ -1,5 +1,32 @@
 {% extends 'base.html' %}
 {% load static %}
+
+{% block meta %}
+<meta
+    name="description"
+    content="Desarrollo de sitios web y aplicaciones web. Tutoriales sobre programación y desarrollo web."
+/>
+<meta itemprop="name" content="Diego Abdo | Desarrollo de Sitios y Aplicaciones Web">
+<meta itemprop="description" content="Desarrollo de sitios web y aplicaciones web. Tutoriales sobre programación y desarrollo web.">
+<meta itemprop="image" content="https://diegoabdo.com/static/media/small-logo.90c81001.png">
+
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://diegoabdo.com">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Diego Abdo | Desarrollo de Sitios y Aplicaciones Web">
+<meta property="og:description" content="Desarrollo de sitios web y aplicaciones web. Tutoriales sobre programación y desarrollo web.">
+<meta property="og:image" content="https://diegoabdo.com/static/media/small-logo.90c81001.png">
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Diego Abdo | Desarrollo de Sitios y Aplicaciones Web">
+<meta name="twitter:description" content="Desarrollo de sitios web y aplicaciones web. Tutoriales sobre programación y desarrollo web.">
+<meta name="twitter:image" content="https://diegoabdo.com/static/media/small-logo.90c81001.png">
+<link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+
+<title>Diego Abdo | Desarrollo de Sitios y Aplicaciones Web</title>
+{% endblock %}
+
 {% block content %}
 <section class="title-section" id="title">
     <h1>¿Necesitas un sitio web?</h1>
@@ -49,8 +76,8 @@
             <h3>Pokelix</h3>
             <p>Busca cualquier pokemón y ve sus detalles.</p>
             <div class="project-btns">
-                <button class="blue-btn ver-btn">VER</button>
-                <button class="dark-btn git-btn">GITHUB</button>
+                <a target="_blank" href="https://pokelix.herokuapp.com/"><button class="blue-btn ver-btn">VER</button></a>
+                <a target="_blank" href="https://github.com/Diegoav87/Pokelix"><button class="dark-btn git-btn">GITHUB</button></a>
             </div>
         </div>
         <div class="project-thumbnail">
@@ -60,14 +87,14 @@
 
     <div class="project-block">
         <div class="project-thumbnail">
-            <img class="project-left" src="{% static 'images/Pokelix.png' %}">
+            <img class="project-left" src="{% static 'images/Poll.png' %}">
         </div>
         <div class="project-info">
-            <h3>Pokelix</h3>
-            <p>Busca cualquier pokemón y ve sus detalles.</p>
+            <h3>Encuestas</h3>
+            <p>Crea y responde encuestas sobre diferentes temas.</p>
             <div class="project-btns">
-                <button class="blue-btn ver-btn">VER</button>
-                <button class="dark-btn git-btn">GITHUB</button>
+                <a target="_blank" href="https://poll-app-diegoav87.herokuapp.com/"><button class="blue-btn ver-btn">VER</button></a>
+                <a target="_blank" href="https://github.com/Diegoav87/Poll-App"><button class="dark-btn git-btn">GITHUB</button></a>
             </div>
         </div>
     </div>

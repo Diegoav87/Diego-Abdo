@@ -1,0 +1,1 @@
+web: gunicorn diego_abdo.wsgi --log-file -
