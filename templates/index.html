@@ -36,9 +36,16 @@
 
 {% block content %}
 <section class="title-section" id="title">
-    <h1>¿Necesitas un sitio web?</h1>
-    <p>Desarrollo sitios web con experiencia de usuario completas e increíbles.</p>
-    <a href="#projects"><button class="blue-btn">PROYECTOS</button></a>
+    <div class="title-container">
+        <div class="title-info">
+            <h1>Desarrollo y Construcción</h1>
+            <p>Desarrollo de sitios y aplicaciones web completos y escalables.</p>
+            <a href="#projects"><button class="blue-btn">PROYECTOS</button></a>
+        </div>
+        <div>
+            <img class="showcase-img" alt="website" src="{% static 'images/showcase-svg.svg' %}">
+        </div>
+    </div>
 </section>
 
 <section class="services-section" id="services">
@@ -63,7 +70,7 @@
     </div>
     <div class="services-container-2">
         <div class="service-block">
-            <img alt="api" class="service-icon" style="color: #5590bd;" src="{% static 'images/api-icon.svg' %}">
+            <img alt="api" class="service-icon" src="{% static 'images/api-icon.svg' %}">
             <h3>API</h3>
             <p>Integración de una API con diferentos puntos.</p>
         </div>

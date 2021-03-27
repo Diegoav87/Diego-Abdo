@@ -80,7 +80,6 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: var(--lightestBlue);
 }
 
 .overlay {
@@ -122,6 +121,7 @@ button {
   padding: 0.6rem 1rem 0.6rem 1rem;
   border: none;
   transition: 0.3s;
+  box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.25);
 }
 
 .blue-btn {
@@ -159,13 +159,40 @@ button {
   display: flex;
 }
 
+.nav-container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+}
+
 .nav-links {
   margin-left: auto;
 }
 
+.nav-links a {
+  display: inline-block;
+}
+
+.nav-links a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: width 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f2f2f2;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
 .logo {
-  max-height: 18.5px;
-  max-width: 36px;
+  max-height: 37px;
+  max-width: 72px;
 }
 
 .nav-links a {
@@ -202,23 +229,31 @@ button {
 /* Title */
 .title-section {
   background-color: var(--darkBlue);
-  text-align: center;
   color: white;
-  padding: 12rem 8rem 12rem 8rem;
+  padding: 6rem 4rem 6rem 4rem;
+}
+
+.title-container {
+  display: flex;
+}
+
+.showcase-img {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .title-section h1 {
   font-weight: 900;
-  font-size: 4rem;
+  font-size: 3rem;
   color: white;
 }
 
 .title-section p {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .title-section button {
-  font-size: 1.125rem;
+  font-size: 1rem;
   padding: 1rem 1.5rem 1rem 1.5rem;
 }
 
@@ -265,7 +300,8 @@ button {
 
 /* Projects */
 .project-section {
-  width: 60%;
+  width: 75%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 8rem;
@@ -385,7 +421,7 @@ button {
 }
 
 @media (min-width: 1024px) {
-  .project-sectio {
+  .project-section {
     width: 60%;
   }
 }
@@ -393,6 +429,15 @@ button {
 @media (min-width: 1330px) {
   .project-section {
     width: 60%;
+  }
+
+  .title-container {
+    width: 80%;
+    margin: auto;
+  }
+
+  .nav-container {
+    width: 75%;
   }
 }
 
@@ -404,6 +449,16 @@ button {
   .contact-section,
   .services-section {
     width: 60%;
+  }
+}
+
+@media (min-width: 1800px) {
+  .title-container {
+    width: 70%;
+  }
+
+  .nav-container {
+    width: 65%;
   }
 }
 
@@ -427,6 +482,15 @@ button {
     width: 90%;
   }
 
+  .title-container {
+    display: unset;
+    text-align: center;
+  }
+
+  .title-info {
+    margin-bottom: 2rem;
+  }
+
   .title-section h1 {
     font-weight: 900;
     font-size: 3rem;
@@ -443,7 +507,7 @@ button {
   }
 
   .title-section {
-    padding: 10rem 8rem 10rem 8rem;
+    padding: 5rem 4rem 5rem 4rem;
   }
 
   .project-block {
