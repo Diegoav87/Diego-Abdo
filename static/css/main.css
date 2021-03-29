@@ -217,20 +217,24 @@ button {
 
 .menu-list li {
   list-style: none;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid white;
+  width: 100%;
+  padding-bottom: 0.6rem;
 }
 
 .menu-list {
   margin-top: 100px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0;
 }
 
 /* Title */
 .title-section {
   background-color: var(--darkBlue);
   color: white;
-  padding: 6rem 4rem 6rem 4rem;
+  padding: 6rem 2rem 6rem 2rem;
 }
 
 .title-container {
